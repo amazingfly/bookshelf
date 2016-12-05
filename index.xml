@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Derek&#39;s New Hugo Site </title>
+    <link>https://amazingfly.github.io/bookshelf/index.xml</link>
+    <language>en-us</language>
+    <author>Shekhar Gulati</author>
+    <rights>(C) 2016</rights>
+    <updated>2016-12-05 17:50:01 -0500 EST</updated>
+
+    
+      
+        <item>
+          <title>good to great</title>
+          <link>https://amazingfly.github.io/bookshelf/post/good-to-great/</link>
+          <pubDate>Mon, 05 Dec 2016 17:50:01 EST</pubDate>
+          <author>Shekhar Gulati</author>
+          <guid>https://amazingfly.github.io/bookshelf/post/good-to-great/</guid>
+          <description>&lt;p&gt;Book shcmook
+a bunch of stuff about things&lt;/p&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>
