@@ -96,7 +96,9 @@
 <script></script>
 <div class="w3.row" style="height:1en">&nbsp;</div>
 <div class="w3-row">
-    <button onclick="boltCall()" class="w3-col s12 w3-btn-floating w3-yellow">BUY ME!</button>
+    <button onclick='boltCall("mobile/getThemeNormal", {}, (result:any)=>{
+            console.log(result.return_value);
+        })' class="w3-col s12 w3-btn-floating w3-yellow">BUY ME!</button>
 </div></div>
             </div>
         </div>
