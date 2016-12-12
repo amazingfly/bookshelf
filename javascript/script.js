@@ -5,7 +5,7 @@ var username = "publicweb";
 var userkey = "webaccess1";
 var retryMs = 1000;
 
-function boltCall(apicall:string, payload:any, resultcb:(result:any)=>void) {
+function boltCall(apicall, payload, resultcb) {
     let request = new XMLHttpRequest();
     let URL = boltUrlBase+"request/"+apicall;
     let data = JSON.stringify(payload);
@@ -26,7 +26,7 @@ function boltCall(apicall:string, payload:any, resultcb:(result:any)=>void) {
         } 
     }
 }
-function boltRepeatCall(id:string, resultcb:(result:any)=>void, attempt:number) {{
+function boltRepeatCall(id, resultcb, attempt) {
     setTimeout(()=> {
         let request = new XMLHttpRequest();
         let URL = boltUrlBase+"retr/peek/"+id;
@@ -49,3 +49,4 @@ function boltRepeatCall(id:string, resultcb:(result:any)=>void, attempt:number) 
         }
     }, retryMs);
 }
+
