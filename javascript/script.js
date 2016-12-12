@@ -1,6 +1,6 @@
 
 //Note: This is using hard coded simple auth. HMAC auth is recommended for production and requires some crypto
-var boltUrlBase = "https://"+window.location.hostname+":8888/";
+var boltUrlBase = "http://"+window.location.hostname+":8888/";
 var username = "publicweb";
 var userkey = "webaccess1";
 var retryMs = 1000;
