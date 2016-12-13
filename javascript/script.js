@@ -1,4 +1,32 @@
 
+// uses apicall to get cart itmes then displays them on the sidebar  TODO needs more style work
+function getCart(){
+    boltCall("mobile/adjustCart", {}, (result)=>{
+            console.log(result.return_value.cartItems);
+            let cartItems = result.return_value.cartItems;
+            let x = document.getElementById("sideCart");
+            var b = "";
+            for (let i = 0; i < cartItems.length; i++){
+                b = b.concat(`<div class="w3-row" >
+                                <div class="w3-col s4">
+                                    <article class="li">
+                                        <a href="`+ cartItems[i].previewImage +`" class="clearfix" style="height:80px;">
+                                            <div class="image" style="height:80px; background-image: url(`+ cartItems[i].previewImage +`)"></div>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div class="w3-col s8 w3-light-gray">
+                                    <div>Price: $`+ cartItems[i].price +`</div>
+                                    <div>qty: `+ cartItems[i].qty +`</div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>`
+                            );
+            }
+            x.innerHTML = b;
+        })
+}
+
 //Note: This is using hard coded simple auth. HMAC auth is recommended for production and requires some crypto
 var boltUrlBase = "http://"+window.location.hostname+":8888/";
 var username = "publicweb";
