@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+        <title>Test Fairmont Cart Page</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js"></script>
+        <script src="../dist/fairmont-cart.js"></script>
+        <script src="../dist/BoltCall.t"></script>
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function() { 
+                //get cartOptions
+                let cartOptions = boltCall("mobile/getCartOptions", {} , function (result)  {
+                        alert("Your cart's ID# is: " + result.return_value.cartID);
+                        return result.return_value.cartID;
+                    });
+                window._fmCart.init(document.body, cartOptions);  //use cart options if they are not null
+            });
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

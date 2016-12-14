@@ -1,8 +1,16 @@
+// gets the banner url and adds it to id="banner" in default_head.html
+function getBanner(){
+    var bannerURL
+    boltCall("mobile/getHomeBanners", {}, (result)=>{
+        bannerURL = result.return_value.images[1];
+        let banner = document.getElementById("banner");
+        banner.style.backgroundImage = `url("`+ bannerURL +`")`;
+    })
+}
 
 // uses apicall to get cart itmes then displays them on the sidebar  TODO needs more style work
 function getCart(){
     boltCall("mobile/adjustCart", {}, (result)=>{
-            console.log(result.return_value.cartItems);
             let cartItems = result.return_value.cartItems;
             let x = document.getElementById("sideCart");
             var b = "";
@@ -24,8 +32,8 @@ function getCart(){
                             </div>
                             <div>&nbsp;</div>`
                             );
+                            x.innerHTML = b;
             }
-            x.innerHTML = b;
         })
 }
 
