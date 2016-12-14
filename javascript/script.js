@@ -16,8 +16,10 @@ function getCart(){
                                     </article>
                                 </div>
                                 <div class="w3-col s8 w3-light-gray">
-                                    <div>Price: $`+ cartItems[i].price +`</div>
-                                    <div>qty: `+ cartItems[i].qty +`</div>
+                                    <div class="w3-large">`+ cartItems[i].name +`</div>
+                                    <div class="w3-small">Price: $<span class="w3-medium w3-text-green">`+ cartItems[i].price +`</span></div>
+                                    <div class="w3-small">qty: `+ cartItems[i].qty +`</div>
+                                    <div class="w3-small">sku: `+ cartItems[i].sku +`</div>
                                 </div>
                             </div>
                             <div>&nbsp;</div>`
