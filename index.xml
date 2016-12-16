@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Derek&#39;s New Hugo Site </title>
-    <link>http://localhost:8888/view/public/index.xml</link>
+    <link>http://localhost:8888/index.xml</link>
     <language>en-us</language>
     <author>Shekhar Gulati</author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Lost Fleet</title>
-          <link>http://localhost:8888/view/public/post/lost-fleet/</link>
+          <link>http://localhost:8888/post/lost-fleet/</link>
           <pubDate>Mon, 05 Dec 2016 17:50:01 EST</pubDate>
           <author>Shekhar Gulati</author>
-          <guid>http://localhost:8888/view/public/post/lost-fleet/</guid>
+          <guid>http://localhost:8888/post/lost-fleet/</guid>
           <description>&lt;p&gt;Good book space battles very nice&lt;/p&gt;
 
 &lt;p&gt;&amp;ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&amp;rdquo;&lt;/p&gt;
@@ -34,10 +34,10 @@
       
         <item>
           <title>good to great</title>
-          <link>http://localhost:8888/view/public/post/good-to-great/</link>
+          <link>http://localhost:8888/post/good-to-great/</link>
           <pubDate>Mon, 05 Dec 2016 17:50:01 EST</pubDate>
           <author>Shekhar Gulati</author>
-          <guid>http://localhost:8888/view/public/post/good-to-great/</guid>
+          <guid>http://localhost:8888/post/good-to-great/</guid>
           <description>&lt;p&gt;Book shcmook
 a bunch of stuff about things&lt;/p&gt;
 </description>

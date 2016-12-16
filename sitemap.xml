@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://localhost:8888/view/public/post/lost-fleet/</loc>
+    <loc>http://localhost:8888/post/lost-fleet/</loc>
     <lastmod>2016-12-05T17:50:01-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8888/view/public/post/good-to-great/</loc>
+    <loc>http://localhost:8888/post/good-to-great/</loc>
     <lastmod>2016-12-05T17:50:01-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8888/view/public/</loc>
+    <loc>http://localhost:8888/</loc>
     <lastmod>2016-12-05T17:50:01-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:8888/view/public/post/</loc>
+    <loc>http://localhost:8888/post/</loc>
     <lastmod>2016-12-05T17:50:01-05:00</lastmod>
     <priority>0</priority>
   </url>
